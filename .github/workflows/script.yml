@@ -19,3 +19,6 @@ jobs:
 
       - name: Run the script
         run: sh script.sh
+        env:
+          BOCA_EMAIL: ${{ secrets.BOCA_EMAIL }}
+          BOCA_PASSWORD: ${{ secrets.BOCA_PASSWORD }}
